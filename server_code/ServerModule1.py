@@ -198,7 +198,7 @@ def client_globals():
   #print(client_info)
   return client_info
 
-  @anvil.server.callable
+@anvil.server.callable
 def user_authentication():
   # check database connection, and auto-reconnect if needed
   conn.ping(reconnect=True)
